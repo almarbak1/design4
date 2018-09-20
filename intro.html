@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>::: 코오롱인더스트리에 오신 것을 환영합니다. :::</title>
+    <!-- Mobile & TabletRe & Responsive on the Screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Render to IE's latest version-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Refresh Interval Time -->
+    <!-- <meta http-equiv="refresh" content="180"> -->
+    <!-- website information -->
+    <meta name="application-name" content="ilshin website">
+    <meta name="author" content="kitae Cortez">
+    <meta name="description" content="웹사이트 소개">
+    <meta name="keywords" content="일신, 방직, 패션, 섬유">
+
+    <!-- Shortcut icon Setting -->
+    <!-- Chrome, Safari, IE -->
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+    <!-- Firefox, Opera (Chrome and Safari say thanks but no thanks) --> <link rel="icon" href="./ico/favicon.png">
+    <!-- Still works in IE6+ series2 -->
+    <link rel="shortcut icon" href="./ico/favicon.ico" type="image/vnd.microsoft.icon">
+    <!-- Still works in IE6+ series3 -->
+    <link rel="shortcut icon" href="./ico/favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./ico/ms-icon-144.png">
+
+    <!-- Favicon for iOS Touch Base -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+
+    <!-- Favicon using to manifest for Android -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Favicon Setting -->
+    <link rel="icon" type="image/png" href="./ico/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./ico/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./ico/favicon-48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="./ico/favicon-64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="./ico/favicon-128.png" sizes="128x128">
+    <link rel="apple-touch-icon-precomposed" href="./ico/favicon-152.png">
+
+    <!-- IE9 Less then Setting -->
+    <!--[if lte IE 7]>
+        <script src="./dist/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <link rel="stylesheet" href="./dist/normalize.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="wsg.css">
+    <link rel="stylesheet" href="intro.css">
+
+    <!-- <script src="./dist/jquery-3.3.1.js"></script> -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <style>
+      body, html {width: 100%; height: 100%;}
+      .wrap {width: 100%; height:4000px;}
+      .ft {width: 100%; height: 140px; border: 1px solid blue; clear: both;position: absolute; bottom: 0px;}
+    </style>
+    <script>
+        var mapX = [37.5278712, 35.1650411, 35.1365284, 37.3043218, 11.130191];
+        var mapY = [ 126.92022020000002, 126.89193920000002, 126.76400460000002, 126.79462809999995, 106.34628299999997];
+        var mapTit = ["본사", "광주1공장", "광주2공장", "반월공장", "일신베트남"];
+        var mapId = ["map_canvas1", "map_canvas2", "map_canvas3", "map_canvas4", "map_canvas5"];
+        var btnNum = 1;
+        $(document).ready(function(){
+            initialize(0);
+            initialize(1);
+            initialize(2);
+            initialize(3);
+            initialize(4);
+        });
+        function initialize(i) {
+          var myLatlng = new google.maps.LatLng(mapX[i],mapY[i]);
+          var mapOptions = {
+            zoom: 17,
+            center: myLatlng
+          }
+
+          var map = new google.maps.Map(document.getElementById(mapId[i]), mapOptions);
+
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: mapTit[i]
+          });
+
+          google.maps.event.addDomListener(window, 'load', initialize);
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".btn_callSub1").click(function(){
+                $(this).siblings("#lnk1").css("display","block");
+                $(this).siblings("#lnk2").css("display","none");
+            });
+            $(".btn_callSub2").click(function(){
+                $(this).siblings("#lnk2").css("display","block");
+                $(this).siblings("#lnk1").css("display","none");
+            });
+        });
+    </script>
+</head>
+<body onload="initialize(0)">
+    <input type="checkbox" class="ckItem" id="collapCk1">
+    <div class="wrap">
+        <header class="hd" id="hd">
+           <input type="checkbox" id="ia_open" class="ckItem">
+           <div class="hdContain" id="hd1">
+                <ul class="tnb left">
+                    <li><a href="" class="login">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+                <ul class="tnb">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><label for="ia_open" class="opener">SITEMAP</label></li>
+                    <li><a href="">ENGLISH</a></li>
+                </ul>
+            </div>
+            <input type="radio" name="subRa" class="raItem" id="subRa0" checked>
+            <div class="hdWrap">
+                <nav class="gnb">
+                    <a href="" class="logo"></a>
+                    <ul class="mainMenu">
+                        <li class="cate1">
+                            <input type="radio" name="subRa" class="raItem" id="subRa1">
+                            <label for="subRa1">회사소개</label>
+                            <div class="sub">
+                                <figure class="subFrame">
+                                    <h2 class="subMenuTit">
+                                    <img src="./img/visual1_txt1.gif" alt="" class="visualTit1">
+                                    <br>
+                                    <span class="bdTxt">
+                                    <img src="./img/visual1_txt2.gif" alt="" class="visualTit2">
+                                    </span></h2>
+                                    <img src="./img/bg_gnb.png" alt="기업소개" class="bgGnb">
+                                </figure>
+                                <ul class="subMenu">
+                                    <li><a href="intro.html#tb1">
+                                            <img src="./img/company1.jpg" alt="회사정보">
+                                            <h3 class="subMenuCateTit">회사정보</h3>
+                                            <p class="subMenuCateDesc">
+                                            고객으로부터 가장 사랑받는 기업<br>
+                                            코오롱 인더스트리
+                                        </a></li>
+                                    <li><a href="intro.html#tb2">
+                                            <img src="./img/company2.jpg" alt="연혁">
+                                            <h3 class="subMenuCateTit">
+                                                연혁
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                1957년 설립되어 현재까지<br>
+                                                한국경제의 지킴이입니다.
+                                            </p>
+                                        </a></li>
+                                    <li><a href="intro.html#tb3">
+                                            <img src="./img/company3.jpg" alt="사업장안내">
+                                            <h3 class="subMenuCateTit">
+                                                사업장안내
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                업계선두주자로써 최상위<br>
+                                                생산시설을 보유하고 있습니다.
+                                            </p>
+                                        </a></li>
+                                    <li><a href="intro.html#tb4">
+                                            <img src="./img/company4.jpg" alt="경영철학">
+                                            <h3 class="subMenuCateTit">
+                                                경영철학
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                CHANGE<br>
+                                                CHALLENGE
+                                            </p>
+                                        </a></li>
+                                    <li><a href="intro.html#tb5">
+                                            <img src="./img/company5.jpg" alt="사회공헌">
+                                            <h3 class="subMenuCateTit">
+                                                사회공헌
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                기업과 사회가 동반성장하는 <br>모범이 되겠습니다.
+                                            </p>
+                                        </a></li>
+                                    <li><a href="intro.html#tb6">
+                                            <img src="./img/company6.jpg" alt="코오롱소식">
+                                            <h3 class="subMenuCateTit">
+                                                코오롱소식
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱의 소식을<br>
+                                                알려드립니다.
+                                            </p>
+                                        </a></li>
+                                        <label for="subRa0" class="closeBtn menuBtn"></label>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cate2">
+                            <input type="radio" name="subRa" class="raItem" id="subRa2">
+                            <label for="subRa2">사업분야</label>
+                            <div class="sub">
+                                <figure class="subFrame">
+                                    <h2 class="subMenuTit">
+                                        Wonderful Life with <br>
+                                        <span class="bdTxt">KORON PRODUCTS</span>
+                                    </h2>
+                                    <img src="./img/bg_gnb.png" alt="사업분야" class="bgGnb">
+                                </figure>
+                                <ul class="subMenu">
+                                    <li><a href="product.html#tb1">
+                                            <img src="./img/product1.jpg" alt="">
+                                            <h3 class="subMenuCateTit">
+                                                사업개요
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱 인더스트리의 사업을<br>
+                                                요약해드립니다.
+                                            </p>
+                                        </a></li>
+                                    <li><a href="product.html#tb2">
+                                            <img src="./img/product2.jpg" alt="">
+                                            <h3 class="subMenuCateTit">
+                                                산업자재
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+
+                                        </a></li>
+                                    <li><a href="product.html#tb3">
+                                            <img src="./img/product3jpg.jpg" alt="">
+                                            <h3 class="subMenuCateTit">
+                                                필름/전자재료
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+
+                                            </p>
+                                        </a></li>
+                                    <li><a href="product.html#tb1">
+                                            <img src="./img/product4.jpg" alt="">
+                                            <h3 class="subMenuCateTit">
+                                                화학
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+
+                                            </p>
+                                        </a></li>
+                                    <li><a href="product.html#tb1">
+                                            <img src="./img/product5.jpg" alt="">
+                                            <h3 class="subMenuCateTit">
+                                                패션
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+
+                                            </p>
+                                        </a></li>
+                                        <label for="subRa0" class="closeBtn menuBtn"></label>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="cate3">
+                            <input type="radio" name="subRa" class="raItem" id="subRa3">
+                            <label for="subRa3">투자정보</label>
+                            <div class="sub">
+                                <figure class="subFrame">
+                                    <h2 class="subMenuTit">
+                                        Global Frontire with<br>
+                                        <span class="bdTxt">BEST SERVICE</span>
+                                    </h2>
+                                    <img src="./img/bg_gnb.png" alt="투자정보" class="bgGnb">
+                                </figure>
+                                <ul class="subMenu">
+                                    <li><a href="information.html#tb1">
+                                            <img src="./img/invest1.jpg" alt="재무정보">
+                                            <h3 class="subMenuCateTit">
+                                               재무정보
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱의 재무정보를<br>
+                                                확인할 수 있습니다.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li><a href="information.html#tb2">
+                                            <img src="./img/invest2.jpg" alt="주가정보">
+                                            <h3 class="subMenuCateTit">
+                                                주식정보
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                자본 관련 요약정보를<br>
+                                                제공합니다.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li><a href="information.html#tb3">
+                                            <img src="./img/invest3.jpg" alt="공시조회">
+                                            <h3 class="subMenuCateTit">
+                                                공시조회
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                기업공시 시스템으로<br>
+                                                연결합니다.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li><a href="information.html#tb4">
+                                            <img src="./img/invest4.jpg" alt="지배구조">
+                                            <h3 class="subMenuCateTit">
+                                                지배구조
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱의 기업지배구조를<br>
+                                                알려드립니다.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li><a href="information.html#tb5">
+                                            <img src="./img/invest5.jpg" alt="자료실">
+                                            <h3 class="subMenuCateTit">
+                                                자료실
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                분석자료를 제시합니다.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <label for="subRa0" class="closeBtn menuBtn"></label>
+                                 </ul>
+                            </div>
+
+                        </li>
+                        <li class="cate4">
+                            <input type="radio" name="subRa" class="raItem" id="subRa4">
+                            <label for="subRa4">채용정보</label>
+                            <div class="sub">
+                                <figure class="subFrame">
+                                    <h2 class="subMenuTit">
+                                        Sensibel Company of<br>
+                                        <span class="bdTxt">ALL PEOPLE</span>
+                                    </h2>
+                                    <img src="./img/bg_gnb.png" alt="채용정보" class="bgGnb">
+                                </figure>
+                                <ul class="subMenu">
+                                    <li><a href="recruit.html#tb1">
+                                            <img src="./img/job.png" alt="인재상">
+                                            <h3 class="subMenuCateTit">
+                                                인재상
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱이 추구하는 인재상을<br>
+                                                알려드립니다.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li><a href="recruit.html#tb2">
+                                            <img src="./img/job2.jpg" alt="인사제도">
+                                            <h3 class="subMenuCateTit">
+                                                인사제도
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                인재를 중시하는<br>
+                                                합리저이고 효율적인 직급체계
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="recruit html" id="tb3">
+                                            <img src="./img/job3.jpg" alt="인재채용">
+                                            <h3 class="subMenuCateTit">
+                                                인재채용
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱에서 여러분의 꿈을 펼쳐보세요!
+                                            </p>
+                                        </a></li>
+                                    <label for="subRa0" class="closeBtn menuBtn"></label>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="cate5">
+                            <input type="radio" name="subRa" class="raItem" id="subRa5">
+                            <label for="subRa5">고객센터</label>
+                            <div class="sub">
+                                <figure class="subFrame">
+                                    <h2 class="subMenuTit">
+                                        Happiness Project with<br>
+                                        <span class="bdTxt">KORON COMPANY</span>
+                                    </h2>
+                                    <img src="./img/bg_gnb.png" alt="고객지원" class="bgGnb">
+                                </figure>
+                                <ul class="subMenu">
+                                    <li><a href="custom.html">
+                                            <img src="./img/customer1.jpg" alt="온라인문의">
+                                            <h3 class="subMenuCateTit">
+                                                온라인문의
+                                            </h3>
+                                            <p class="subMenuCateDesc">
+                                                코오롱에 대한 문의를 할 수 있습니다.
+                                            </p>
+                                        </a></li>
+                                    <label for="subRa0" class="closeBtn menuBtn"></label>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <label for="ia_open" class="lstBtn">
+                        <span class="icon"></span>
+                    </label>
+                </nav>
+            </div>
+            <div class="collap" id="collap1">
+                <h2 class="sitemapTit">SITEMAP</h2>
+                <nav class="sitemap">
+                    <ul>
+                        <li class="sitemapCateTit">회사소개</li>
+                        <li><a href="intro.html#tb1">기업정보</a></li>
+                        <li><a href="intro.html#tb2">연혁</a></li>
+                        <li><a href="intro.html#tb3">사업장안내</a></li>
+                        <li><a href="intro.html#tb4">경영철학</a></li>
+                        <li><a href="intro.html#tb5">사회공헌</a></li>
+                        <li><a href="intro.html#tb6">코오롱소식</a></li>
+                    </ul>
+                    <ul>
+                        <li class="sitemapCateTit">사업분야</li>
+                        <li><a href="product.html#tb1">사업개요</a></li>
+                        <li><a href="product.html#tb2">산업자재</a></li>
+                        <li><a href="product.html#tb3">필름/전자재료</a></li>
+                        <li><a href="product.html#tb1">화학</a></li>
+                        <li><a href="product.html#tb1">패션</a></li>
+                    </ul>
+                    <ul>
+                        <li class="sitemapCateTit">투자정보</li>
+                        <li><a href="information.html#tb1">재무정보</a></li>
+                        <li><a href="information.html#tb1">주가정보</a></li>
+                        <li><a href="information.html#tb1">공시조회</a></li>
+                        <li><a href="information.html#tb1">지배구조</a></li>
+                        <li><a href="information.html#tb1">자료실</a></li>
+                    </ul>
+                    <ul>
+                        <li class="sitemapCateTit">채용정보</li>
+                        <li><a href="recruit.html#tb1">인재상</a></li>
+                        <li><a href="recruit.html#tb2">인사제도</a></li>
+                        <li><a href="recruit.html#tb3">인재채용</a></li>
+                    </ul>
+                    <ul>
+                        <li class="sitemapCateTit">온라인문의</li>
+                        <li><a href="custom.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <label for="ia_open" class="closeBtn2" style="left:1140px; right:auto; top:50px; z-index:26;"></label>
+            </div>
+        </header>
+        <main class="content">
+            <figure class="mainSlider" id="visual1">
+                <ul class="imgFrame" style="border-top:solid 1px #ccc;">
+                    <li class="item1">
+                        <img src="./img/intro.jpg" alt="비주얼" class="mainBg" >
+                    </li>
+                </ul>
+                <div class="txtFrame">
+                    <p class="subVsTit">생활 속 작은 기쁨을 만들어가는<span class="bdTxt">코오롱 인더스트리!</span></p>
+                    <p class="subVsTit">고객으로부터 가장 사랑받는 기업이 되겠습니다.</p>
+                </div>
+            </figure>
+            <section class="page" id="page1">
+               <ul class="tabFrame">
+                <li class="item1" id="tb1">
+                    <div class="breadCrumb">
+                      <a href="index.html" class="home" title="main">
+                        <img src="./images/logo_white.png" class="breadLogo" alt="코오롱인더스트리">
+                        <span class="icon"></span>
+                      </a>
+                      <a class="btn_callSub1 selBtn">
+                          기업소개 <span class="icon"></span>
+                      </a>
+                      <ul class="depth1" id="lnk1">
+                        <li>
+                            <a href="intro.html#tb1">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="product.html#tb1">사업분야</a>
+                        </li>
+                        <li>
+                            <a href="information.html#tb1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="recruit.html#tb1">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="custom.html#tb1">고객센터</a>
+                        </li>
+                    </ul>
+                    <a class="btn_callSub2 selBtn">회사정보
+                         <span class="icon"></span>
+                    </a>
+                    <ul class="depth2" id="lnk2">
+                        <li><a href="#tb1">회사정보</a></li>
+                        <li><a href="#tb2">연혁</a></li>
+                        <li><a href="#tb3">사업장안내</a></li>
+                        <li><a href="#tb4">경영철학</a></li>
+                        <li><a href="#tb5">사회공헌</a></li>
+                        <li><a href="#tb6">코오롱소식</a></li>
+                    </ul>
+                  </div>
+                  <a href="#tb1" class="tabBtn">회사정보</a>
+                  <div class="tabCon">
+                      <article class="tabConFrame">
+                          <p class="subTxt1"></p>
+                          <p class="subTxt1">
+                              고객으로부터 가장 사랑받는 기업<br>
+                              <span>FIRST</span>도 코오롱인더스트리이며, <span>BEST</span>도 코오롱인더스트리입니다.</p>
+                          <h2 class="subTit" style="padding:40px">
+                              <img src="./img/company1-1.jpg" alt="">
+                          </h2>
+
+                                      <p class="subTxt2">대표이사    사장  <span class="subTxt3">장  희  구</span></p>
+
+                                  <li class="right">
+                                      <div class="storyImgFrame">
+                                          <img src="./img/ceo.png" alt="CEO사진">
+                                      </div>
+                                  </li>
+                     </article>
+                  </div>
+                </li>
+                <li class="item2" id="tb2">
+                    <div class="breadCrumb">
+                      <a href="index.html" class="home" title="main">
+                        <img src="./images/logo_white.png" class="breadLogo" alt="코오롱인더스트리">
+                        <span class="icon"></span>
+                      </a>
+                      <a class="btn_callSub1 selBtn">
+                          기업소개 <span class="icon"></span>
+                      </a>
+                      <ul class="depth1" id="lnk1">
+                        <li>
+                            <a href="intro.html#tb1">기업소개</a>
+                        </li>
+                        <li>
+                            <a href="product.html#tb1">제품소개</a>
+                        </li>
+                        <li>
+                            <a href="information.html#tb1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="recruit.html#tb1">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="custom.html#tb1">고객지원</a>
+                        </li>
+                    </ul>
+                    <a class="btn_callSub2 selBtn">연혁
+                         <span class="icon"></span>
+                    </a>
+                    <ul class="depth2" id="lnk2">
+                        <li><a href="#tb1">기업정보</a></li>
+                        <li><a href="#tb2">연혁</a></li>
+                        <li><a href="#tb3">사업장안내</a></li>
+                        <li><a href="#tb4">관계사</a></li>
+                        <li><a href="#tb5">사회공헌</a></li>
+                        <li><a href="#tb6">코오롱소식</a></li>
+                    </ul>
+                  </div>
+                  <a href="#tb2" class="tabBtn">연혁</a>
+                  <div class="tabCon">
+                      <article class="tabConFrame">
+                          <p class="subTxt1"></p>
+                          <h3 class="subTit">
+                            코오롱인더스트리의 발자취를 소개합니다.
+                          </h3>
+                          <h2 class="subTit" style="padding:40px">
+                              <img src="./images/img_sub01_01_01.png" alt="일신픽토그램">
+                          </h2>
+                          <ul class="yearBox yearBox1">
+                              <li class="history1">
+                                    <div class="yearImgBox left">
+                                        <img src="./images/palallax01_01.png" alt="종연방적 광주공장">
+                                    </div>
+                                    <div class="yearTxtBox right">
+                                        <h2 class="subTit5">1935.9</h2>
+                                        <h3 class="subTit6">종연방적(鐘淵紡績)광주공장</h3>
+                                        <p class="subTxt4">
+                                            코오롱인더스트리의 모태인<br>
+                                            현재의 광주1공장(북구.임동)은 일제강점기였던<br> 1935년 일본의 방직업체가<br>
+                                            운영하던 공장으로<br>
+                                            당시 방적기35,000추, 직기1,440대,<br>
+                                            종업원3,000명의 국내 최대 규모였다.
+                                        </p>
+                                    </div>
+                              </li>
+                              <li class="history2">
+                                    <div class="yearTxtBox left">
+                                        <h2 class="subTit5">1945.11</h2>
+                                        <h3 class="subTit6">전남방직공사(全南紡織公社)</h3>
+                                        <p class="subTxt4">
+                                            8.15광복으로 일본인들이 물러가고 공장이<br>정부소유의 전남방직공사로 출범하면서<br>관리책임자로 김형남(金瀅楠)을 임명함에 따라<br>전남방직공사 이사장에 취임한다.
+                                        </p>
+                                    </div>
+                                    <div class="yearImgBox right">
+                                        <img src="./images/palallax01_02.png" alt="전남방직공사">
+                                    </div>
+                              </li>
+                              <li class="history3">
+                                    <div class="yearImgBox left">
+                                        <img src="./images/palallax01_03.png" alt="한국전쟁으로 공장파괴">
+                                    </div>
+                                    <div class="yearTxtBox right">
+                                        <h2 class="subTit5">1950.6</h2>
+                                        <h3 class="subTit6">한국전쟁으로 공장파괴</h3>
+                                        <p class="subTxt4">
+                                            해방후 어렵게 조성된 산업시설이 한국전쟁으로<br> 순식간에 폐허로 변한다.
+                                        </p>
+                                    </div>
+                              </li>
+                              <div class="blankBox"></div>
+                          </ul>
+                          <ul class="yearBox yearBox2">
+                              <li class="history1">
+                                    <div class="yearTxtBox left">
+                                        <h2 class="subTit5">1951.11</h2>
+                                        <h3 class="subTit6">전남방직주식회사 출범</h3>
+                                        <p class="subTxt4">
+                                            정부의 민영화 방침에 따라 김형남(金瀅楠)은<br>김용주(金龍周), 이한원(李漢垣)과<br>함께 공동으로 전남방직공사를 불하받아<br>전남방직주식회사로 출범한다<br>(현재의 창립기념일인 11월3일은<br>정부로부터 불하받은 날이다)
+                                        </p>
+                                    </div>
+                                    <div class="yearImgBox right">
+                                        <img src="./images/palallax02_01.png" alt="전남방직주식회사 출범">
+                                    </div>
+                              </li>
+                              <li class="history2">
+                                    <div class="yearImgBox left">
+                                        <img src="./images/palallax02_02.png" alt="코오롱인더스트리주식회사로 분할 재출범">
+                                    </div>
+                                    <div class="yearTxtBox right">
+                                        <h2 class="subTit5">1961.8</h2>
+                                        <h3 class="subTit6">코오롱인더스트리주식회사로 분할 재출범</h3>
+                                        <p class="subTxt4">
+                                            1960년 3.15부정선거와 1961년 4.19혁명으로<br>어수선한 사회분위기가 회사에도 번지게 되자<br>적정규모의 효율적 경영을 위해 회사를<br>양분하여 김형남은 &lt;코오롱인더스트리&gt;으로 재출범한다.
+                                        </p>
+                                    </div>
+                              </li>
+                              <div class="blankBox"></div>
+                          </ul>
+                          <ul class="yearBox yearBox3">
+                              <li class="history1">
+                                    <div class="yearTxtBox left">
+                                        <h2 class="subTit5">1972.12</h2>
+                                        <h3 class="subTit6">종연방적(鐘淵紡績)광주공장</h3>
+                                        <p class="subTxt4">
+                                            1961년에 입사하여 재직중이던<br>김창호 부사장이 대표이사에 취임하여<br>세계적인 섬유수요의 증가추세에 발맞추어<br>본격적인 수출중심의 경영체제를 갖춰간다.
+                                        </p>
+                                    </div>
+                                    <div class="yearImgBox right">
+                                        <img src="./images/palallax03_01.png" alt="김창호 대표이사 취임">
+                                    </div>
+                              </li>
+                              <li class="history2">
+                                    <div class="yearImgBox left">
+                                        <img src="./images/palallax03_02.png" alt="기업공개">
+                                    </div>
+                                    <div class="yearTxtBox right">
+                                        <h2 class="subTit5">1973.5</h2>
+                                        <h3 class="subTit6">기업공개</h3>
+                                        <p class="subTxt4">
+                                            기업경영의 투명성 제고와<br>재무구조의 개선을 위해 한국증권거래소에<br>주식을 상장하여 78번째의 상장기업이 된다.
+                                        </p>
+                                    </div>
+                              </li>
+                              <li class="history3">
+                                    <div class="yearTxtBox left">
+                                        <h2 class="subTit5">1978.6</h2>
+                                        <h3 class="subTit6">창업자 김형남 별세</h3>
+                                        <p class="subTxt4">
+                                            1945년 전남방직공사 이사장을 시작으로<br>23년간 회사에 몸담았던 창업자 김형남이<br>향년74세를 일기로 별세한다<br>장례는 고인이 대학재건에 초창기부터 관여하여<br>이사장과 총장을 거친<br>숭실대학교 학교장으로 치러진다.
+                                        </p>
+                                    </div>
+                                    <div class="yearImgBox right">
+                                        <img src="./images/palallax03_03.png" alt="창업자 김형남 별세">
+                                    </div>
+                              </li>
+                              <div class="blankBox"></div>
+                          </ul>
+                          <ul class="yearBox yearBox3">
+                              <li class="history1">
+                                    <div class="yearImgBox left">
+                                        <img src="./images/palallax04_01.png" alt="김영호 대표이사 취임">
+                                    </div>
+                                    <div class="yearTxtBox right">
+                                        <h2 class="subTit5">1982.3</h2>
+                                        <h3 class="subTit6">김영호 대표이사 취임</h3>
+                                        <p class="subTxt4">
+                                            1974년에 입사하여 재직중이던 김영호 부사장이<br>대표이사 사장에 취임하여 새로운 경영체제를<br>구축하고 전사적인 경영합리화를 추진한다.
+                                        </p>
+                                    </div>
+                              </li>
+                              <div class="blankBox"></div>
+                          </ul>
+                     </article>
+                  </div>
+                </li>
+                <li class="item3" id="tb3">
+                    <div class="breadCrumb">
+                      <a href="index.html" class="home" title="main">
+                        <img src="./images/logo_white.png" class="breadLogo" alt="코오롱인더스트리">
+                        <span class="icon"></span>
+                      </a>
+                      <a class="btn_callSub1 selBtn">
+                          기업소개 <span class="icon"></span>
+                      </a>
+                      <ul class="depth1" id="lnk1">
+                        <li>
+                            <a href="intro.html#tb1">기업소개</a>
+                        </li>
+                        <li>
+                            <a href="product.html#tb1">제품소개</a>
+                        </li>
+                        <li>
+                            <a href="information.html#tb1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="recruit.html#tb1">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="custom.html#tb1">고객지원</a>
+                        </li>
+                    </ul>
+                    <a class="btn_callSub2 selBtn">사업장안내
+                         <span class="icon"></span>
+                    </a>
+                    <ul class="depth2" id="lnk2">
+                        <li><a href="#tb1">기업정보</a></li>
+                        <li><a href="#tb2">연혁</a></li>
+                        <li><a href="#tb3">사업장안내</a></li>
+                        <li><a href="#tb4">관계사</a></li>
+                        <li><a href="#tb5">사회공헌</a></li>
+                        <li><a href="#tb6">코오롱소식</a></li>
+                    </ul>
+                  </div>
+                  <a href="#tb3" class="tabBtn">사업장안내</a>
+                  <div class="tabCon">
+                      <article class="tabConFrame" id="raCon3">
+                          <p class="subTxt1"></p>
+                          <h3 class="subTit">
+                            코오롱인더스트리의 본사 및 공장을 소개합니다.
+                          </h3>
+                          <h2 class="subTit" style="padding:40px">
+                              <img src="./images/img_sub01_01_01.png" alt="일신픽토그램">
+                          </h2>
+                          <div class="guideFrame">
+                              <input type="radio" name="subRa30" id="subRa31" class="raItem" checked>
+                              <label for="subRa31" class="guideTabBtn item1" data-target="#map_canvas1" data-index="1">본사</label>
+                              <ul class="guideBox guideBox1">
+                                  <li class="guide1">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall01_01.jpg" alt="본사 빌딩">
+                                        </div>
+                                        <div class="guideTxtBox">
+                                            <h2 class="guideName">본사</h2>
+                                            <h3 class="subTit7">독창적인 예술성을 갖춘 빌딩</h3>
+                                            <p class="subTxt1">
+                                                1991년에 신축된 건물로 사옥인 여의도 일신빌딩<br>건축공사 때부터 가림막을 이용한 설치미술을 선보여 세간의 주목
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <li class="guide1 subGuideImg">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall01_03.jpg" alt="본사 빌딩">
+                                        </div>
+                                  </li>
+                                  <li class="guide2">
+                                        <h3 class="subTit4">본사현황</h3>
+                                        <div class="guideTxtBox">
+                                            <ul class="guideGrid">
+                                                <li class="item1">
+                                                    <div class="company_status">
+                                                        <span class="icon year">
+
+                                                    </span>입주년도<br>
+                                                    <span class="yearTxt">1991</span>년
+                                                    </div>
+                                                </li>
+                                                <li class="item2">
+                                                    <div class="company_status">근무인원수<br><span class="icon executives"></span>
+                                                    <span class="yearTxt">70여</span>명
+                                                    </div>
+                                                </li>
+                                                <li class="item3">
+                                                    <div class="company_status"><span class="icon area"></span>
+                                                    본사면적<br>연면적
+                                                        <span class="yearTxt">5,860</span>평</div>
+                                                </li>
+                                                <li class="item4">
+                                                    <div class="company_status"><span class="icon organization"></span>
+                                                    조직도<br>
+                                                        <span class="yearTxt">
+                                                            4</span><span class="yearTxt">-2</span>실<br>
+                                                            (총무부,경리부,영업부,<br>업무부감사실,전산실)
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                  </li>
+                                  <li class="guide3">
+                                        <h3 class="subTit4" style="color:#000;">찾아오시는 길</h3>
+                                        <div class="yearImgBox mapFrame">
+                                            <div class="mapBox" id="map_canvas1">
+
+                                            </div>
+                                        </div>
+                                        <div class="yearTxtBox right">
+                                            <p class="subTxt4">
+                                                <span class="mapLabel">주소</span>
+                                                [우편번호 07237] 서울특별시 영등포구 은행로 11 (여의도동)<br>
+                                                <span class="mapLabel">전화번호</span>
+                                                02-3774-0114
+                                                <span class="mapLabel">팩스</span>
+                                                02-786-5891~4
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <div class="blankBox"></div>
+                              </ul>
+                          </div>
+                          <div class="guideFrame">
+                              <input type="radio" name="subRa30" id="subRa32" class="raItem">
+                              <label for="subRa32" class="guideTabBtn item2" data-target="#map_canvas2" data-index="2">광주1공장</label>
+                              <ul class="guideBox guideBox2">
+                                  <li class="guide1">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall02_01.jpg" alt="광주1공장">
+                                        </div>
+                                        <div class="guideTxtBox">
+                                            <h2 class="guideName">광주1공장</h2>
+                                            <h3 class="subTit7">코오롱인더스트리의 모태 공장</h3>
+                                            <p class="subTxt1">
+                                                회사 설립 시부터 가동 중인 모태 공장
+                                                <br><strong>광주광역시 도심 임동에 위치한 3개 단위 공장</strong>
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <li class="guide1 subGuideImg">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall02_03.jpg" alt="본사 빌딩">
+                                        </div>
+                                  </li>
+                                  <li class="guide2">
+                                        <h3 class="subTit4">광주1공장 현황</h3>
+                                        <div class="guideTxtBox">
+                                            <ul class="guideGrid">
+                                                <li class="item1">
+                                                    <div class="company_status">
+                                                        <span class="icon year">
+
+                                                    </span>설립연도<br>
+                                                    <span class="yearTxt">1951</span>년<br>(최초 가동 1935년)
+                                                    </div>
+                                                </li>
+                                                <li class="item2">
+                                                    <div class="company_status">근무인원수<br><span class="icon executives"></span>
+                                                    <span class="yearTxt">500여</span>명
+                                                    </div>
+                                                </li>
+                                                <li class="item3">
+                                                    <div class="company_status"><span class="icon sewing"></span>
+                                                    방적설비<br>약
+                                                        <span class="yearTxt">110,000</span>추</div>
+                                                </li>
+                                                <li class="item4">
+                                                    <div class="company_status"><span class="icon roll"></span>
+                                                    일일 생산능력<br>
+                                                        <span class="yearTxt">
+                                                            74,000</span>kg
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                  </li>
+                                  <li class="guide3">
+                                        <h3 class="subTit4" style="color:#000;">찾아오시는 길</h3>
+                                        <div class="yearImgBox mapFrame">
+                                            <div class="mapBox" id="map_canvas2">
+
+                                            </div>
+                                        </div>
+                                        <div class="yearTxtBox right">
+                                            <p class="subTxt4">
+                                                <span class="mapLabel">주소</span>
+                                                [우편번호 61254] 광주광역시 북구 서림로 60(임동)<br>
+                                                <span class="mapLabel">전화번호</span>
+                                                062-510-5101
+                                                <span class="mapLabel">팩스</span>
+                                                062-510-5105
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <div class="blankBox"></div>
+                              </ul>
+                          </div>
+                          <div class="guideFrame">
+                              <input type="radio" name="subRa30" id="subRa33" class="raItem">
+                              <label for="subRa33" class="guideTabBtn item3" data-target="#map_canvas3" data-index="3">광주2공장</label>
+                              <ul class="guideBox guideBox3">
+                                  <li class="guide1">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall03_01.jpg" alt="본사 빌딩">
+                                        </div>
+                                        <div class="guideTxtBox">
+                                            <h2 class="guideName">광주2공장</h2>
+                                            <h3 class="subTit7">국내 최대 규모의 최첨단 면방 공장</h3>
+                                            <p class="subTxt1">
+                                                2007년 신설한 광주평동산업단지에 위치한 공장
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <li class="guide1 subGuideImg">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall03_03.jpg" alt="본사 빌딩">
+                                        </div>
+                                  </li>
+                                  <li class="guide2">
+                                        <h3 class="subTit4">광주2공장 현황</h3>
+                                        <div class="guideTxtBox">
+                                            <ul class="guideGrid">
+                                                <li class="item1">
+                                                    <div class="company_status">
+                                                        <span class="icon year">
+
+                                                    </span>설립연도<br>
+                                                    <span class="yearTxt">2007</span>년<br>
+                                                    </div>
+                                                </li>
+                                                <li class="item2">
+                                                    <div class="company_status">근무인원수<br><span class="icon executives"></span>
+                                                    <span class="yearTxt">200여</span>명
+                                                    </div>
+                                                </li>
+                                                <li class="item3">
+                                                    <div class="company_status"><span class="icon sewing"></span>
+                                                    방적설비<br>약
+                                                        <span class="yearTxt">70,000</span>추</div>
+                                                </li>
+                                                <li class="item4">
+                                                    <div class="company_status"><span class="icon roll"></span>
+                                                    일일 생산능력<br>
+                                                        <span class="yearTxt">
+                                                            55,000</span>kg
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                  </li>
+                                  <li class="guide3">
+                                        <h3 class="subTit4" style="color:#000;">찾아오시는 길</h3>
+                                        <div class="yearImgBox mapFrame">
+                                            <div class="mapBox" id="map_canvas3">
+
+                                            </div>
+                                        </div>
+                                        <div class="yearTxtBox right">
+                                            <p class="subTxt4">
+                                                <span class="mapLabel">주소</span>
+                                                [우편번호 62413] 광주광역시 광산구 평동산단1번로 71(옥동)<br>
+                                                <span class="mapLabel">전화번호</span>
+                                                062-600-5301
+                                                <span class="mapLabel">팩스</span>
+                                                062-600-5305
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <div class="blankBox"></div>
+                              </ul>
+                          </div>
+                          <div class="guideFrame">
+                              <input type="radio" name="subRa30" id="subRa34" class="raItem">
+                              <label for="subRa34" class="guideTabBtn item4" data-target="#map_canvas4" data-index="4">반월공장</label>
+                              <ul class="guideBox guideBox4">
+                                  <li class="guide1">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall04_01.jpg" alt="반월공장">
+                                        </div>
+                                        <div class="guideTxtBox">
+                                            <h2 class="guideName">반월공장</h2>
+                                            <h3 class="subTit7">반월염색단지에 소재한 공장</h3>
+                                            <p class="subTxt1">
+                                                사염생산과 포염생산을 함께 갖추고 있는 공장
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <li class="guide1 subGuideImg">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall04_03.jpg" alt="본사 빌딩">
+                                        </div>
+                                  </li>
+                                  <li class="guide2">
+                                        <h3 class="subTit4">반월공장 현황</h3>
+                                        <div class="guideTxtBox">
+                                            <ul class="guideGrid">
+                                                <li class="item1">
+                                                    <div class="company_status">
+                                                        <span class="icon year">
+
+                                                    </span>설립연도<br>
+                                                    <span class="yearTxt">1984</span>년<br>
+                                                    </div>
+                                                </li>
+                                                <li class="item2">
+                                                    <div class="company_status">근무인원수<br><span class="icon executives"></span>
+                                                    <span class="yearTxt">200여</span>명
+                                                    </div>
+                                                </li>
+                                                <li class="item3">
+                                                    <div class="company_status"><span class="icon roll"></span>
+                                                    사염 일일 생산능력<br>
+                                                        <span class="yearTxt">27,000</span>kg</div>
+                                                </li>
+                                                <li class="item4">
+                                                    <div class="company_status"><span class="icon roll"></span>
+                                                    포염 일일 생산능력<br>
+                                                        <span class="yearTxt">
+                                                            37,000</span>kg
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                  </li>
+                                  <li class="guide3">
+                                        <h3 class="subTit4" style="color:#000;">찾아오시는 길</h3>
+                                        <div class="yearImgBox mapFrame">
+                                            <div class="mapBox" id="map_canvas4">
+
+                                            </div>
+                                        </div>
+                                        <div class="yearTxtBox right">
+                                            <p class="subTxt4">
+                                                <span class="mapLabel">주소</span>
+                                                [우편번호 15438] 경기도 안산시 단원구 산단로68번길 97(초지동)<br>
+                                                <span class="mapLabel">전화번호</span>
+                                                031-489-4604
+                                                <span class="mapLabel">팩스</span>
+                                                031-489-4600
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <div class="blankBox"></div>
+                              </ul>
+                          </div>
+                          <div class="guideFrame">
+                              <input type="radio" name="subRa30" id="subRa35" class="raItem">
+                              <label for="subRa35" class="guideTabBtn item5" data-target="#map_canvas5" data-index="5">
+                                  일신베트남
+                              </label>
+                              <ul class="guideBox guideBox4">
+                                  <li class="guide1">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall01_01.jpg" alt="본사 빌딩">
+                                        </div>
+                                        <div class="guideTxtBox">
+                                            <h2 class="guideName">본사</h2>
+                                            <h3 class="subTit7">독창적인 예술성을 갖춘 빌딩</h3>
+                                            <p class="subTxt1">
+                                                1991년에 신축된 건물로 사옥인 여의도 일신빌딩<br>건축공사 때부터 가림막을 이용한 설치미술을 선보여 세간의 주목
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <li class="guide1 subGuideImg">
+                                        <div class="guideImgBox">
+                                            <img src="./images/companygall05_03.jpg" alt="본사 빌딩">
+                                        </div>
+                                  </li>
+                                  <li class="guide2">
+                                        <h3 class="subTit4">본사현황</h3>
+                                        <div class="guideTxtBox">
+                                            <ul class="guideGrid">
+                                                <li class="item1">
+                                                    <div class="company_status">
+                                                        <span class="icon year">
+
+                                                    </span>설립년도<br>
+                                                    <span class="yearTxt">2015</span>년
+                                                    </div>
+                                                </li>
+                                                <li class="item2">
+                                                    <div class="company_status">근무인원수<br><span class="icon executives"></span>
+                                                    <span class="yearTxt">400여</span>명
+                                                    </div>
+                                                </li>
+                                                <li class="item3">
+                                                    <div class="company_status"><span class="icon sewing"></span>
+                                                    방적설비<br>약
+                                                        <span class="yearTxt">70,000</span>추</div>
+                                                </li>
+                                                <li class="item4">
+                                                    <div class="company_status"><span class="icon roll"></span>
+                                                    일일 생산능력<br>
+                                                        <span class="yearTxt">
+                                                            45,000</span>kg<br>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                  </li>
+                                  <li class="guide3">
+                                        <h3 class="subTit4" style="color:#000;">찾아오시는 길</h3>
+                                        <div class="yearImgBox mapFrame">
+                                            <div class="mapBox" id="map_canvas5">
+
+                                            </div>
+                                        </div>
+                                        <div class="yearTxtBox right">
+                                            <p class="subTxt4">
+                                                <span class="mapLabel">주소</span>
+                                                30-4, Phuoc Dong Industrial Zone, Phuoc Dong, Go Dau Commune Tay Ninh Province, Vietnam<br>
+                                                <span class="mapLabel">전화번호</span>
+                                                (0276) 3534-600
+                                                <span class="mapLabel">팩스</span>
+                                                (0276) 3534-603
+                                            </p>
+                                        </div>
+                                  </li>
+                                  <div class="blankBox"></div>
+                              </ul>
+                          </div>
+                          <div class="guideFrame relationCon">
+                             <h3 class="subTit4" style="color:#000; line-height:80px;">연관콘텐츠</h3>
+                              <ul class="thumailFrame">
+                                  <li class="spl5">
+                                      <label for="subRa31">
+                                          <img src="./images/thumb_infolist_01.jpg" alt="본사">
+                                          <h4 class="proName">본사</h4>
+                                      </label>
+                                  </li>
+                                  <li class="spl5">
+                                      <label for="subRa32">
+                                          <img src="./images/thumb_infolist_02.jpg" alt="">
+                                          <h4 class="proName">광주1공장</h4>
+                                      </label></li>
+                                  <li class="spl5">
+                                      <label for="subRa33">
+                                          <img src="./images/thumb_infolist_03.jpg" alt="">
+                                          <h4 class="proName">광주2공장</h4>
+                                      </label></li>
+                                  <li class="spl5">
+                                      <label for="subRa34">
+                                          <img src="./images/thumb_infolist_04.jpg" alt="">
+                                          <h4 class="proName">반월공장</h4>
+                                      </label>
+                                  </li>
+                                  <li class="spl5">
+                                      <label for="subRa35">
+                                          <img src="./images/thumb_infolist_05.jpg" alt="">
+                                          <h4 class="proName">일신베트남</h4>
+                                      </label>
+                                  </li>
+                              </ul>
+                          </div>
+                     </article>
+                  </div>
+                </li>
+                <li class="item4" id="tb4">
+                    <div class="breadCrumb">
+                      <a href="index.html" class="home" title="main">
+                        <img src="./images/logo_white.png" class="breadLogo" alt="코오롱인더스트리">
+                        <span class="icon"></span>
+                      </a>
+                      <a class="btn_callSub1 selBtn">
+                          기업소개 <span class="icon"></span>
+                      </a>
+                      <ul class="depth1" id="lnk1">
+                        <li>
+                            <a href="intro.html#tb1">기업소개</a>
+                        </li>
+                        <li>
+                            <a href="product.html#tb1">제품소개</a>
+                        </li>
+                        <li>
+                            <a href="information.html#tb1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="recruit.html#tb1">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="custom.html#tb1">고객지원</a>
+                        </li>
+                    </ul>
+                    <a class="btn_callSub2 selBtn">경영철학
+                         <span class="icon"></span>
+                    </a>
+                    <ul class="depth2" id="lnk2">
+                        <li><a href="#tb1">기업정보</a></li>
+                        <li><a href="#tb2">연혁</a></li>
+                        <li><a href="#tb3">사업장안내</a></li>
+                        <li><a href="#tb4">경영철학</a></li>
+                        <li><a href="#tb5">사회공헌</a></li>
+                        <li><a href="#tb6">코오롱소식</a></li>
+                    </ul>
+                  </div>
+                  <a href="#tb4" class="tabBtn">경영철학</a>
+                  <div class="tabCon">
+                      <p class="subTxt1"></p>
+                      <h3 class="subTit">
+                        코오롱인더스트리은 <string>다양한 사업을 운영</string>하고 있습니다.
+                      </h3>
+                      <h2 class="subTit" style="padding:40px">
+                          <img src="./images/img_sub01_01_01.png" alt="일신픽토그램">
+                      </h2>
+                      <div class="grdBox">
+                          <ul class="grdFrame">
+                              <li class="item1">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="주식회사신동">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 신동</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item2">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company02.jpg" alt="신동와인">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">신동와인주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item3">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company03.jpg" alt="일신인베스트먼트">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">일신창업투자주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item4">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company04.jpg" alt="지오다노">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 지오다노</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item5">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company05.jpg" alt="바디샵">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">더바디샵</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item6">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="고디바">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">고디바</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="grdBox">
+                          <ul class="grdFrame">
+                              <li class="item1">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="주식회사신동">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 신동</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item2">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company02.jpg" alt="신동와인">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">신동와인주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item3">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company03.jpg" alt="일신인베스트먼트">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">일신창업투자주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item4">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company04.jpg" alt="지오다노">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 지오다노</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item5">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company05.jpg" alt="바디샵">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">더바디샵</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item6">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="고디바">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">고디바</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="grdBox">
+                          <ul class="grdFrame">
+                              <li class="item1">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="주식회사신동">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 신동</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item2">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company02.jpg" alt="신동와인">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">신동와인주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item3">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company03.jpg" alt="일신인베스트먼트">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">일신창업투자주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item4">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company04.jpg" alt="지오다노">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 지오다노</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item5">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company05.jpg" alt="바디샵">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">더바디샵</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item6">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="고디바">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">고디바</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="grdBox">
+                          <ul class="grdFrame">
+                              <li class="item1">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="주식회사신동">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 신동</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item2">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company02.jpg" alt="신동와인">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">신동와인주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item3">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company03.jpg" alt="일신인베스트먼트">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">일신창업투자주식회사</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item4">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company04.jpg" alt="지오다노">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">주식회사 지오다노</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item5">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company05.jpg" alt="바디샵">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">더바디샵</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                              <li class="item6">
+                                  <div class="thum">
+                                      <img src="./images/bg_sub_company01.jpg" alt="고디바">
+                                  </div>
+                                  <a href="" class="hoverBox">
+                                      <span class="thumMore">+</span>
+                                      <h4 class="thumTit1">고디바</h4>
+                                      <h4 class="thumMore2">VIEW</h4>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                </li>
+                <li class="item5" id="tb5">
+                    <div class="breadCrumb">
+                      <a href="index.html" class="home" title="main">
+                        <img src="./images/logo_white.png" class="breadLogo" alt="코오롱인더스트리">
+                        <span class="icon"></span>
+                      </a>
+                      <a class="btn_callSub1 selBtn">
+                          기업소개 <span class="icon"></span>
+                      </a>
+                      <ul class="depth1" id="lnk1">
+                        <li>
+                            <a href="intro.html#tb1">기업소개</a>
+                        </li>
+                        <li>
+                            <a href="product.html#tb1">제품소개</a>
+                        </li>
+                        <li>
+                            <a href="information.html#tb1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="recruit.html#tb1">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="custom.html#tb1">고객지원</a>
+                        </li>
+                    </ul>
+                    <a class="btn_callSub2 selBtn">사회공헌
+                         <span class="icon"></span>
+                    </a>
+                    <ul class="depth2" id="lnk2">
+                        <li><a href="#tb1">기업정보</a></li>
+                        <li><a href="#tb2">연혁</a></li>
+                        <li><a href="#tb3">사업장안내</a></li>
+                        <li><a href="#tb4">관계사</a></li>
+                        <li><a href="#tb5">사회공헌</a></li>
+                        <li><a href="#tb6">코오롱소식</a></li>
+                    </ul>
+                  </div>
+                  <a href="#tb5" class="tabBtn">사회공헌</a>
+                  <div class="tabCon">
+                      <p class="subTxt1"></p>
+                      <h3 class="subTit">
+                        <string>세계 시장에서 이들 제품이 돋보이는 이유</string><br/>뛰어난 디자인과 그에 어울리는 우수한 품질을 인정받고 있기 때문입니다.
+                      </h3>
+                      <h2 class="subTit" style="padding:40px">
+                          <img src="./images/img_sub01_01_01.png" alt="일신픽토그램">
+                      </h2>
+                      <div class="grdBox2">
+                          <ul class="grdFrame">
+                              <li class="item1">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_01.png" alt="노스페이스" title="노스페이스">
+                                  </div>
+                              </li>
+                              <li class="item2">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_02.png" alt="자라" title="자라">
+                                  </div>
+                              </li>
+                              <li class="item3">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_03.png" alt="망고" title="망고">
+                                  </div>
+                              </li>
+                              <li class="item4">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_04.png" alt="랄프로렌" title="랄프로렌">
+                                  </div>
+                              </li>
+                              <li class="item5">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_05.png" alt="제이씨페니" title="제이씨페니">
+                                  </div>
+                              </li>
+                              <li class="item6">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_06.png" alt="터깃" title="터깃">
+                                  </div>
+                              </li>
+                              <li class="item7">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_07.png" alt="올드네이비" title="올드네이비">
+                                  </div>
+                              </li>
+                              <li class="item8">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_08.png" alt="나이키" title="나이키">
+                                  </div>
+                              </li>
+                              <li class="item9">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_09.png" alt="갭" title="갭">
+                                  </div>
+                              </li>
+                              <li class="item10">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_10.png" alt="아디다스" title="아디다스">
+                                  </div>
+                              </li>
+                              <li class="item11">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_11.png" alt="포에버" title="포에버">
+                                  </div>
+                              </li>
+                              <li class="item12">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_12.png" alt="지오다노" title="지오다노">
+                                  </div>
+                              </li>
+                              <li class="item13">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_13.png" alt="콜스" title="콜스">
+                                  </div>
+                              </li>
+                              <li class="item14">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_14.png" alt="자라" title="자라">
+                                  </div>
+                              </li>
+                              <li class="item15">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_15.png" alt="데쌍뜨" title="데쌍뜨">
+                                  </div>
+                              </li>
+                              <li class="item16">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_16.png" alt="빅토리아시크릿" title="빅토리아시크릿">
+                                  </div>
+                              </li>
+                              <li class="item17">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_17.png" alt="르꼬끄" title="르꼬끄">
+                                  </div>
+                              </li>
+                              <li class="item18">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_18.png" alt="리바이스" title="리바이스">
+                                  </div>
+                              </li>
+                              <li class="item19">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_19.png" alt="유니클로" title="유니클로">
+                                  </div>
+                              </li>
+                              <li class="item20">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_20.png" alt="토미" title="토미">
+                                  </div>
+                              </li>
+                              <li class="item21">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_21.png" alt="언더아머" title="언더아머">
+                                  </div>
+                              </li>
+                              <li class="item22">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_22.png" alt="아베크롬비" title="아베크롬비">
+                                  </div>
+                              </li>
+                              <li class="item23">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_23.png" alt="월마트" title="월마트">
+                                  </div>
+                              </li>
+                              <li class="item24">
+                                  <div class="thum">
+                                      <img src="./images/thumb_client_24.png" alt="빈폴" title="빈폴">
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="item6" id="tb6">
+                    <div class="breadCrumb">
+                      <a href="index.html" class="home" title="main">
+                        <img src="./images/logo_white.png" class="breadLogo" alt="코오롱인더스트리">
+                        <span class="icon"></span>
+                      </a>
+                      <a class="btn_callSub1 selBtn">
+                          기업소개 <span class="icon"></span>
+                      </a>
+                      <ul class="depth1" id="lnk1">
+                        <li>
+                            <a href="intro.html#tb1">기업소개</a>
+                        </li>
+                        <li>
+                            <a href="product.html#tb1">제품소개</a>
+                        </li>
+                        <li>
+                            <a href="information.html#tb1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="recruit.html#tb1">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="custom.html#tb1">고객지원</a>
+                        </li>
+                    </ul>
+                    <a class="btn_callSub2 selBtn">코오롱소식
+                         <span class="icon"></span>
+                    </a>
+                    <ul class="depth2" id="lnk2">
+                        <li><a href="#tb1">기업정보</a></li>
+                        <li><a href="#tb2">연혁</a></li>
+                        <li><a href="#tb3">사업장안내</a></li>
+                        <li><a href="#tb4">관계사</a></li>
+                        <li><a href="#tb5">사회공헌</a></li>
+                        <li><a href="#tb6">코오롱소식</a></li>
+                    </ul>
+                  </div>
+                  <a href="#tb6" class="tabBtn">코오롱소식</a>
+                  <div class="tabCon">
+                      <p class="subTxt1"></p>
+                      <h3 class="subTit" style="margin-left:-900px;">
+                        <img src="./img/visual6_txt1.gif" alt="" style="margin-left:-80px;"><br>
+                        <img src="./img/visual6_txt2.gif" alt="" style="margin-left:340px; ">
+                        <img src="./img/visual6_txt3.gif" alt="" style="">
+                      </h3>
+                      <div class="grdBox3">
+                          <div class="controlBar">
+                              <div class="left">
+                                  <p class="cnt">총 14건</p>
+                              </div>
+                              <div class="right">
+                                  <form action="" id="searchFrm">
+                                      <div class="frmFrame">
+                                          <input list="searchMethod" placeholder="ALL">
+                                          <datalist id="searchMethod">
+                                              <option value="ALL">
+                                              <option value="제목">
+                                              <option value="내용">
+                                          </datalist>
+                                      </div>
+                                      <div class="frmFrame">
+                                          <input type="text" id="keyword" placeholder="SEARCH">
+                                          <input type="submit" class="searchBtn">
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                          <ul class="grdFrame">
+                              <li class="item1">
+                                  <div class="opaBox bgGrd1"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">[FnC] 코오롱스포츠, 中 안타와 합작사 설립</span>
+                                    <span class="thumDate">2017-02-23</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item2">
+                                  <div class="opaBox bgGrd2"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">	[FnC] 쿠론, 17SS 캠페인 공개</span>
+                                    <span class="thumDate">2017-02-17</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item3">
+                                  <div class="opaBox bgGrd3"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">	[FnC] 코오롱스포츠, 17SS 컬렉션 공개</span>
+                                    <span class="thumDate">2017-02-02</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item4">
+                                  <div class="opaBox bgGrd4"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">[FnC] 헤드, 스포츠 오리진과 여성고객 둘다잡는다</span>
+                                    <span class="thumDate">2017-01-25</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item5">
+                                  <div class="opaBox bgGrd5"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">[FnC] 래코드, 새해시작은 글로벌</span>
+                                    <span class="thumDate">2017-01-18</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item6">
+                                  <div class="opaBox bgGrd6"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">코오롱인더스트리FnC부문, 서울디자인페스티벌서 PLAY한다</span>
+                                    <span class="thumDate">2016-12-19</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item7">
+                                  <div class="opaBox bgGrd1"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">동남아 첫 타이어코드 생산기지 베트남에 구축</span>
+                                    <span class="thumDate">2016-11-28</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item8">
+                                  <div class="opaBox bgGrd2"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">2015년 2분기 매출 1조 2,346억 원, 영업이익 764억 원(IFRS 연결기준)</span>
+                                    <span class="thumDate">2015-08-06</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item9">
+                                  <div class="opaBox bgGrd3"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">코오롱인더스트리, 에어백 쿠션사업 중국1위 굳힌다.</span>
+                                    <span class="thumDate">2015-07-30</span>
+                                    <span class="shortCut">코오롱인더스트리, 아라미드 민 형사 소송 마무리</span>
+                                  </a>
+                              </li>
+                              <li class="item10">
+                                  <div class="opaBox bgGrd4"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">코오롱인더스트리, 석유수지사업 확대 본격화</span>
+                                    <span class="thumDate">2014-07-10</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item11">
+                                  <div class="opaBox bgGrd5"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">코오롱인더, 중국 혜주에 전자재료 생산거점 마련</span>
+                                    <span class="thumDate">2014-04-23</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                              <li class="item12">
+                                  <div class="opaBox bgGrd6"></div>
+                                  <a href="#" class="thum">
+                                    <span class="thumTit">코오롱, 듀폰 상대 아라미드 항소심 완승!</span>
+                                    <span class="thumDate">2014-04-04</span>
+                                    <span class="shortCut">바로가기</span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <ul class="pageNation">
+                              <li><a href="#tb6" class="boardBtnPrev"></a></li>
+                              <li><a href="#tb6" class="active">1</a></li>
+                              <li><a href="#tb6">2</a></li>
+                              <li><a href="#tb6">3</a></li>
+                              <li><a href="#tb6" class="boardBtnNext"></a></li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+             </ul>
+            </section>
+        </main>
+    </div>
+    <footer class="ft">
+        <div class="ftFrame">
+            <nav class="fnb">
+                <ul>
+                    <li><a href="member1.html">개인정보 취급방침</a></li>
+                    <li><label for="ia_open" style="cursor:pointer;">사이트맵</label></li>
+                    <li><a href="#">&nbsp;</a></li>
+                    <li class="last"><a href="">ENGLISH</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">
+               <span>서울특별시 강서구 마곡동로 110(마곡동) 코오롱 One&Only Tower</span>
+               <img src="./img/copyright.gif" alt="">
+            </p>
+        </div>
+    </footer>
+    <a href="#tb1" class="goTop"></a>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃2</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body, html {width: 100%; height: 100%;}
+        ul {list-style: none;}
+        a {text-decoration: none;}
+        
+        .ckItem, .raItem {display: none;}
+        .hd {background: #200;color: #fff;}
+        .content {background: #c90; color: #fff;} 
+        .ft {background: #000; color:#fff;}
+        .collap {background: #cc3; color: #fff; text-align: center;}
+        
+        .hd {position: absolute; top: 0;left: 0; }
+        .hdContain .sitemapBtn {display: block; float: right; margin-top: 30px;}
+        .hdWrap {height: 86px;}
+        .collap {position: fixed;top: 120px;width: 100%;height: 500px; display: none;}
+        #ia_open:checked ~ .collap {display: block;}
+        
+        .wrap {width:100%; height:100%; padding-bottom:10%;}
+        .hd {position:absoulte; top:0; left:0; width:100%; z-index:100;}
+        .hdContain {height:40px;}
+        .hdContain .stiemapBtn {display:block; float:right; margin-top:-30px;}
+        .hdWrap {height:86px;}
+        .collap {position:fixed; top:126px; width:100%; height:500px; display:none;}
+        #ia_open:checked ~ .collap {display:block;}
+
+                    .content {width:100%;}
+                    .mainSlider {width:100%;}
+                    #page1 {width:100%; height:520px;}
+                    .gridName {width:960px; margin:0 auto; height:520px;}
+                    .ft {clear:both; position:relative; margin-top:128px; height:100px;}
+        
+        
+        .tnb li {float: left;}
+        .tnb li a, .tnb li label {color: #f00; display: block; line-height: 40px; font-size: 14px; font-weight: 600;}
+        .tnb .left {float: left; margin-left: 10%;}
+        .tnb .right {float: right; margin-right: 10%;}
+        
+        
+    </style>
+    
+    <style>
+        .tnb {float: left;}
+        .right {float: right;}
+    </style>
+</head>
+<body>
+    <input type="checkbox" class="ckItem" id="collapCK1">
+        <div class="wrap">
+        <header class="hd" id="hd">
+            <input type="checkbox" id="ia_open" class="ckItem">
+            <div class="hdContain" id="hd1">
+                <ul class="tnb left">
+                    <li><a href="login_form.php">로그인</a></li>
+                    <li><a href="add_form.php">회원가입</a></li>
+                </ul>
+                <ul class="tnb right">
+                    <li><label for="ia_open" class="opener"></label></li>
+                    <li><a href="">ENGLISH</a></li>
+                </ul>
+            </div>
+            <input type="radio" name="subRa" checked="" class="raItem" id="subRa0">
+            <div class="hdWrap">
+                <nav class="gnb">
+                    <a href="index.html" class="logo"></a>
+                    <ul class="mainMenu">
+                        <li></li>
+                    </ul>
+                </nav>
+                <h1 class="areaname">메인 메뉴 영역</h1>
+                <label for="lstBtn" for="ia_open">리스트</label>
+            </div>
+            <div class="collap" id="collap1">
+                <h1 class="areaname">사이트 펼침 메뉴</h1>
+            </div>
+        </header>
+           <main class="content">
+               <input type="radio" name="slRa1" class="raItem" id="slRa01">
+                <input type="radio" name="slRa1" class="raItem" id="slRa02">
+                <input type="radio" name="slRa1" class="raItem" id="slRa03">
+                <input type="radio" name="slRa1" class="raItem" id="slRa04">
+                 <input type="radio" name="slRa1" class="raItem" id="slRa05">
+                <figure class="mainSlider">
+                    <h1><areaname>비주얼 배너 영역</areaname></h1>
+                </figure>
+                <section class="page" id="page1">
+                    <h1 class="areaname">그리드영역</h1>
+                </section>
+           </main>
+        <footer class="ft">
+            <h1>푸터 영역</h1>
+        </footer>    
+        </div>
+</body>
+</html>
